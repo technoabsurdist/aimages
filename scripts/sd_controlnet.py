@@ -314,7 +314,7 @@ def entrypoint(
     )
 
     sd = StableDiffusion()
-    images = sd.run_inference.call(
+    images = sd.run_inference.remote(
         prompt=prompt,
         negative_prompt=negative_prompt,
         batch_size=n,
